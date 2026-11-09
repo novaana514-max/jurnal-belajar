@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:id="@+id/tvSapa" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Halo!" android:textSize="28sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvTema" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Tema" android:paddingBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="PENGATURAN (SharedPreferences)" android:textStyle="bold" android:paddingTop="8dp"/>
+    <EditText android:id="@+id/etNama" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Nama panggilan" android:inputType="textPersonName"/>
+    <EditText android:id="@+id/etTarget" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Target belajar (menit)" android:inputType="number"/>
+    <androidx.appcompat.widget.SwitchCompat android:id="@+id/swTema"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Tema gelap" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+    <Button android:id="@+id/btnSimpanPref" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Simpan pengaturan"/>
+    <TextView android:id="@+id/tvBukti" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="12sp" android:paddingTop="6dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="RIWAYAT BELAJAR (SQLite)" android:textStyle="bold" android:paddingTop="20dp"/>
+    <TextView android:id="@+id/tvProgres" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etMateri" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Materi yang dipelajari" android:inputType="text"/>
+    <EditText android:id="@+id/etMenit" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Durasi (menit)" android:inputType="number"/>
+    <Button android:id="@+id/btnTambah" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Tambah ke riwayat"/>
+    <ListView android:id="@+id/lvJurnal" android:layout_width="match_parent" android:layout_height="300dp"
+        android:nestedScrollingEnabled="true"/>
+</LinearLayout>
+</ScrollView>
